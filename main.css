@@ -429,7 +429,7 @@ nav bar
 }
 
 .about-image {
-  max-width: 25rem;
+  max-width: 20rem;
   margin-bottom: 4rem;
   border: 3px solid rgb(155, 155, 154);
   transition: var(--transition);
@@ -566,10 +566,10 @@ nav bar
 
 .product-img {
   object-fit: cover;
+  max-width: 20rem;
   height: 17rem;
   transition: var(--transition);
   display: grid;
-  /* justify-content: space-around; */
   place-self: center;
 
 }

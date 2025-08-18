@@ -569,7 +569,8 @@ nav bar
   max-width: 20rem;
   height: 17rem;
   transition: var(--transition);
-  margin-left: 4rem;
+  margin-left: 1rem;
+  /* margin: 0 auto; */
   /* display: grid; */
   /* justify-content: center; */
   /* place-self: center; */

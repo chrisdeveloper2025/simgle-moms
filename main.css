@@ -42,6 +42,12 @@ image {
   object-fit: cover;
 }
 
+.blur {
+  filter: blur(3px);
+  pointer-events: none;
+  /* disable clicking background while nav is open */
+}
+
 h1,
 h2,
 h3,
@@ -166,6 +172,8 @@ welcome to single mother
   left: 0%;
   right: 0%;
   bottom: 0%;
+  height: 100%;
+  width: 50%;
   background: var(--clr-grey-10);
   z-index: 2;
   box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
@@ -570,6 +578,10 @@ Connect
   letter-spacing: 1.5px;
   line-height: 2rem;
   margin: 2rem 0;
+}
+
+.purpose-title h2 {
+  text-align: center;
 }
 
 .video-banner {

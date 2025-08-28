@@ -43,7 +43,7 @@ image {
 }
 
 .blur {
-  filter: blur(3px);
+  filter: blur(5px);
   pointer-events: none;
   /* disable clicking background while nav is open */
 }
@@ -446,6 +446,7 @@ welcome to single mother
   background: #3f4949;
   border-radius: 2px;
   text-align: center;
+  padding: 0.5rem 0;
 }
 
 .purpose-text {

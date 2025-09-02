@@ -8,7 +8,7 @@
   --clr-grey-10: #cbe0ff;
   --clr-backg-1: #102a42;
   --clr-backg-5: #617d98;
-  --clr-backg-10: #f1f5f8;
+  --clr-backg-10: hsl(206, 33%, 96%);
   --clr-white: #fff;
   --clr-white2: #dff5df;
   --ff-primary: 'catamaran', sans-serif;
@@ -26,7 +26,10 @@
 
 body {
   color: var(--clr-grey-1);
-  background: var(--clr-white);
+  background: var(--clr-backg-10);
+  --clr-primary: #004e50;
+  --clr-primary: #004e50;
+  /* background: linear-gradient(0deg, #a3b0c3, #0a1414); */
   font-family: var(--ff-primary);
   line-height: 1.5rem;
   font-size: 0.86rem;
@@ -341,11 +344,12 @@ welcome to single mother
 }
 
 .about-info h1 {
-  color: rgb(155, 155, 154);
+  color: var(--clr-primary);
   text-transform: capitalize;
   margin: 0 auto;
   padding-top: 3rem;
   max-width: 30rem;
+  text-align: center;
 }
 
 .about-image {
@@ -438,6 +442,11 @@ welcome to single mother
 
 .purpose {
   background: var(--clr-backg-10);
+  /* background: red; */
+  clip-path: polygon(0% 0%,
+      100% 0%,
+      100% 100%,
+      0 100%);
 
 }
 
@@ -666,9 +675,31 @@ Connect
 }
 
 .chris {
-  background: #3f5b5c;
+  position: relative;
+  background: linear-gradient(80deg, #3f5b5c, rgb(213, 152, 152));
   text-align: center;
+  clip-path: polygon(0 0%, 100% 0%, 100% 95%, 0 100%);
+  /* clip-path: circle(50% at 50% 50%); */
+  /* clip-path: ellipse(50% 50% at 50% 50%); */
 }
+
+.extra-back {
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+  /* background: linear-gradient(0deg,
+
+  rgb(213, 152, 152),
+  #3f5b5c); */
+  width: 100%;
+  height: 5rem;
+  /* clip-path: circle(50% at 50% 50%); */
+  z-index: -2;
+  overflow: hidden;
+}
+
+
+
 
 .join-us {
   min-height: 100vh;

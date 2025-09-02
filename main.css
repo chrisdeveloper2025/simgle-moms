@@ -353,7 +353,9 @@ welcome to single mother
 }
 
 .about-image {
-  max-width: 25rem;
+  height: 17rem;
+  object-fit: cover;
+  width: 20rem;
   border: 3px solid rgb(155, 155, 154);
   transition: var(--transition);
 }
@@ -483,10 +485,16 @@ welcome to single mother
 
 .product-img {
   object-fit: cover;
-  max-width: 20rem;
+  width: 20rem;
   height: 17rem;
   transition: var(--transition);
-  margin-left: 4rem;
+  margin: 0 2rem;
+  /* margin-right: 1rem; */
+  /* margin: 0rem 3rem; */
+  overflow: hidden;
+  display: grid;
+  justify-content: center;
+  place-self: center;
 
 
 }
@@ -683,20 +691,6 @@ Connect
   /* clip-path: ellipse(50% 50% at 50% 50%); */
 }
 
-.extra-back {
-  position: absolute;
-  bottom: 0rem;
-  right: 0rem;
-  /* background: linear-gradient(0deg,
-
-  rgb(213, 152, 152),
-  #3f5b5c); */
-  width: 100%;
-  height: 5rem;
-  /* clip-path: circle(50% at 50% 50%); */
-  z-index: -2;
-  overflow: hidden;
-}
 
 
 
